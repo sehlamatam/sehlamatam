@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مأتم سهل ماتم | السهلة الجنوبية</title>
+<style>
+:root{--bg:#090909;--panel:#15120e;--gold:#c7a45b;--gold2:#ead6a2;--text:#f6f0e4;--muted:#c7bda9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.85}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.10;background-image:repeating-linear-gradient(45deg,transparent 0 18px,#c7a45b 19px,transparent 20px 38px),repeating-linear-gradient(-45deg,transparent 0 18px,#c7a45b 19px,transparent 20px 38px);mask-image:linear-gradient(to bottom,black,transparent 85%);z-index:-1}
+header{min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:35px 18px;background:linear-gradient(#0009,#000b),var(--hero,radial-gradient(ellipse at center,#302415,#080808 70%));background-size:cover;background-position:center;border-bottom:1px solid var(--gold)}
+.logo{width:90px;height:90px;object-fit:contain;border-radius:50%;border:1px solid var(--gold);padding:5px;margin-bottom:10px;display:none}
+.kicker{color:var(--gold2);letter-spacing:2px}.title{font-size:clamp(2rem,6vw,3.5rem);color:var(--gold2);margin:3px 0;text-shadow:0 2px 18px #000}.sub{margin:0;color:#eee}
+nav{position:sticky;top:0;z-index:5;background:#100e0bf2;border-bottom:1px solid #8c713d;display:flex;justify-content:center;flex-wrap:wrap;padding:8px;backdrop-filter:blur(8px)}
+nav a{color:var(--gold2);text-decoration:none;padding:8px 13px;font-size:14px}nav a:hover{background:#302719;border-radius:5px}
+main{max-width:1050px;margin:auto;padding:22px 16px}.intro{text-align:center;padding:28px 15px}.intro h2{color:var(--gold2);font-size:1.8rem;margin:0 0 8px}
+.section{background:linear-gradient(145deg,#17130e,#0d0c0a);border:1px solid #6d5731;border-radius:14px;padding:22px;margin:18px 0;box-shadow:0 8px 28px #0008}
+h2{color:var(--gold2);margin-top:0;border-right:3px solid var(--gold);padding-right:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}
+.card{background:#211b12;border:1px solid #514127;border-radius:10px;padding:16px}.card h3{color:var(--gold2);margin:0 0 7px}.muted{color:var(--muted)}
+.empty{padding:18px;border:1px dashed #80683d;border-radius:9px;color:var(--muted);text-align:center}
+.btn{display:inline-block;background:var(--gold);color:#17120a;text-decoration:none;border:0;border-radius:7px;padding:9px 17px;font-weight:bold;cursor:pointer;font:inherit}
+.btn.secondary{background:transparent;color:var(--gold2);border:1px solid var(--gold)}.btn.small{font-size:13px;padding:6px 10px}
+footer{text-align:center;background:#100e0b;border-top:1px solid var(--gold);padding:25px;color:var(--muted)}
+.admin-fab{position:fixed;bottom:16px;left:16px;z-index:8;border-radius:50%;width:52px;height:52px;font-size:20px}
+dialog{border:1px solid var(--gold);border-radius:14px;background:#14110d;color:var(--text);width:min(680px,94vw);max-height:90vh;padding:22px}
+dialog::backdrop{background:#000b}.field{display:grid;gap:5px;margin:12px 0}.field input,.field textarea{width:100%;background:#090807;border:1px solid #695532;color:white;border-radius:7px;padding:10px;font:inherit}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.admin-tabs{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.hidden{display:none!important}
+.item{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:9px;border-bottom:1px solid #493a24}.notice{font-size:13px;color:#d8c69e;background:#292113;padding:10px;border-radius:8px}
+@media(max-width:600px){nav a{padding:6px 8px;font-size:12px}header{min-height:280px}.section{padding:17px}}
+</style>
+</head>
+<body>
+<header id="hero">
+<img id="siteLogo" class="logo" alt="شعار المأتم">
+<div class="kicker">بسم الله الرحمن الرحيم</div>
+<h1 class="title" id="siteName">مأتم سهل ماتم</h1>
+<p class="sub">السهلة الجنوبية · مملكة البحرين</p>
+<p class="kicker">يا حسين</p>
+</header>
+<nav>
+<a href="#home">الرئيسية</a><a href="#events">المجالس والمناسبات</a><a href="#live">البث المباشر</a><a href="#news">الأخبار والإعلانات</a><a href="#media">الصور والفيديوهات</a><a href="#speakers">المحاضرات والخطباء</a><a href="#contact">التواصل والموقع</a>
+</nav>
+<main>
+<section class="intro" id="home"><h2>أهلاً وسهلاً بكم</h2><p class="muted">الموقع الإلكتروني لمأتم سهل ماتم في السهلة الجنوبية، لمتابعة المجالس والمناسبات والأنشطة الحسينية.</p></section>
+<section class="section" id="events"><h2>جدول المجالس والمناسبات</h2><div id="eventsList" class="grid"><div class="empty">سيتم الإعلان عن المجالس والمناسبات هنا.</div></div></section>
+<section class="section" id="live"><h2>البث المباشر للمجالس</h2><div id="liveContent" class="empty">سيظهر رابط البث المباشر هنا عند إضافته من إدارة الموقع.</div></section>
+<section class="section" id="news"><h2>الأخبار والإعلانات</h2><div id="newsList" class="grid"><div class="empty">ستُنشر أخبار وإعلانات المأتم هنا.</div></div></section>
+<section class="section" id="media"><h2>الصور والفيديوهات</h2><div id="mediaList" class="grid"><div class="empty">ستُضاف الصور والفيديوهات هنا.</div></div></section>
+<section class="section" id="speakers"><h2>المحاضرات والخطباء</h2><div id="speakersList" class="grid"><div class="empty">ستُضاف أسماء الخطباء ومواعيد المحاضرات هنا.</div></div></section>
+<section class="section" id="contact"><h2>موقع المأتم والتواصل</h2><p>مأتم سهل ماتم – السهلة الجنوبية، مملكة البحرين</p><div id="contactContent" class="muted">يمكن إضافة رقم التواصل ورابط الموقع على الخريطة من لوحة التحكم.</div></section>
+</main>
+<footer><strong>مأتم سهل ماتم</strong><br>السهلة الجنوبية – مملكة البحرين<br><small>جميع الحقوق محفوظة © <span id="year"></span></small></footer>
+<button class="btn admin-fab" onclick="openAdmin()" aria-label="لوحة التحكم" title="لوحة التحكم">⚙</button>
+<dialog id="admin">
+<h2>لوحة إدارة مأتم سهل ماتم</h2>
+<div id="loginView">
+<p class="muted">للدخول إلى لوحة الإدارة، أدخل كلمة المرور.</p>
+<div class="field"><label>كلمة المرور</label><input id="loginPass" type="password" autocomplete="current-password"></div>
+<button class="btn" onclick="login()">دخول</button>
+<p class="muted" style="font-size:12px">أول استخدام؟ اختر «إعداد كلمة مرور» لإنشاء كلمة مرور محلية للمعاينة.</p>
+<button class="btn secondary small" onclick="setupPassword()">إعداد كلمة مرور</button>
+</div>
+<div id="panelView" class="hidden">
+<div class="notice">هذه نسخة تجريبية تحفظ التغييرات في هذا المتصفح فقط. قبل نشر الموقع للعامة، يلزم ربط لوحة الإدارة بخادم وتسجيل دخول آمن.</div>
+<div class="admin-tabs">
+<button class="btn small" onclick="showTab('appearance')">الشعار والخلفية</button>
+<button class="btn small" onclick="showTab('content')">إضافة محتوى</button>
+<button class="btn small" onclick="showTab('contactTab')">التواصل والبث</button>
+</div>
+<div id="appearance" class="tab">
+<h3>تخصيص مظهر الموقع</h3>
+<div class="field"><label>رفع شعار المأتم</label><input id="logoFile" type="file" accept="image/*"></div>
+<div class="field"><label>رفع صورة الخلفية</label><input id="bgFile" type="file" accept="image/*"></div>
+<div class="actions"><button class="btn" onclick="saveAppearance()">حفظ المظهر</button><button class="btn secondary" onclick="resetAppearance()">إزالة الصور المخصصة</button></div>
+</div>
+<div id="content" class="tab hidden">
+<h3>إضافة إعلان أو مجلس أو محاضرة</h3>
+<div class="field"><label>القسم</label><select id="contentType"><option value="events">المجالس والمناسبات</option><option value="news">الأخبار والإعلانات</option><option value="speakers">المحاضرات والخطباء</option></select></div>
+<div class="field"><label>العنوان</label><input id="contentTitle" placeholder="عنوان الإعلان أو المجلس"></div>
+<div class="field"><label>التفاصيل / التاريخ</label><textarea id="contentText" rows="3" placeholder="اكتب التفاصيل هنا"></textarea></div>
+<button class="btn" onclick="addContent()">نشر المحتوى</button>
+<div id="manageItems"></div>
+</div>
+<div id="contactTab" class="tab hidden">
+<h3>روابط التواصل والبث</h3>
+<div class="field"><label>رابط البث المباشر</label><input id="liveUrl" type="url" placeholder="https://..."></div>
+<div class="field"><label>رقم التواصل</label><input id="phone" placeholder="رقم الهاتف"></div>
+<div class="field"><label>رابط موقع المأتم على الخريطة</label><input id="mapUrl" type="url" placeholder="https://maps.google.com/..."></div>
+<button class="btn" onclick="saveContact()">حفظ</button>
+</div>
+<div class="actions"><button class="btn secondary" onclick="logout()">تسجيل الخروج</button><button class="btn secondary" onclick="document.getElementById('admin').close()">إغلاق</button></div>
+</div>
+</dialog>
+<script>
+const $=id=>document.getElementById(id);
+const read=(k,d)=>{try{return JSON.parse(localStorage.getItem('sehla_'+k))??d}catch{return d}};
+const write=(k,v)=>localStorage.setItem('sehla_'+k,JSON.stringify(v));
+$('year').textContent=new Date().getFullYear();
+function openAdmin(){$('admin').showModal();$('loginView').classList.remove('hidden');$('panelView').classList.add('hidden');$('loginPass').value=''}
+function setupPassword(){if(localStorage.getItem('sehla_pass')){alert('تم إعداد كلمة مرور مسبقاً. استخدمها لتسجيل الدخول.');return}let p=prompt('أنشئ كلمة مرور للوحة التحكم (8 أحرف أو أكثر):');if(!p||p.length<8){alert('يجب أن تكون كلمة المرور 8 أحرف على الأقل.');return}localStorage.setItem('sehla_pass',p);alert('تم إعداد كلمة المرور على هذا المتصفح.')}
+function login(){let p=$('loginPass').value;if(!localStorage.getItem('sehla_pass')){alert('يرجى إعداد كلمة مرور أولاً.');return}if(p!==localStorage.getItem('sehla_pass')){alert('كلمة المرور غير صحيحة');return}$('loginView').classList.add('hidden');$('panelView').classList.remove('hidden');renderManage()}
+function logout(){$('panelView').classList.add('hidden');$('loginView').classList.remove('hidden')}
+function showTab(id){document.querySelectorAll('.tab').forEach(x=>x.classList.add('hidden'));$(id).classList.remove('hidden');if(id==='content')renderManage()}
+function fileData(file){return new Promise((res,rej)=>{let r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(file)})}
+async function saveAppearance(){let l=$('logoFile').files[0],b=$('bgFile').files[0];if(l)localStorage.setItem('sehla_logo',await fileData(l));if(b)localStorage.setItem('sehla_bg',await fileData(b));applyAppearance();alert('تم حفظ المظهر في هذا المتصفح.')}
+function applyAppearance(){let l=localStorage.getItem('sehla_logo'),b=localStorage.getItem('sehla_bg');if(l){$('siteLogo').src=l;$('siteLogo').style.display='block'}if(b)$('hero').style.setProperty('--hero',`linear-gradient(#0009,#000b),url("${b}")`)}
+function resetAppearance(){localStorage.removeItem('sehla_logo');localStorage.removeItem('sehla_bg');$('siteLogo').style.display='none';$('hero').style.removeProperty('--hero');alert('تمت إزالة الصور المخصصة.')}
+function addContent(){let type=$('contentType').value,title=$('contentTitle').value.trim(),body=$('contentText').value.trim();if(!title){alert('اكتب العنوان أولاً');return}let arr=read(type,[]);arr.unshift({title,body,date:new Date().toLocaleDateString('ar-BH')});write(type,arr);$('contentTitle').value='';$('contentText').value='';render();renderManage();alert('تمت إضافة المحتوى.')}
+function renderCards(id,key){let arr=read(key,[]);$(id).innerHTML=arr.length?arr.map(x=>`<article class="card"><h3>${esc(x.title)}</h3><p>${esc(x.body||'')}</p><small class="muted">${esc(x.date||'')}</small></article>`).join(''):'<div class="empty">لا توجد إضافات حالياً.</div>'}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function renderManage(){let arr=[...read('events',[]).map((x,i)=>({...x,k:'events',i})),...read('news',[]).map((x,i)=>({...x,k:'news',i})),...read('speakers',[]).map((x,i)=>({...x,k:'speakers',i}))];$('manageItems').innerHTML=arr.map(x=>`<div class="item"><span>${esc(x.title)} <small class="muted">(${x.k})</small></span><button class="btn secondary small" onclick="removeItem('${x.k}',${x.i})">حذف</button></div>`).join('')}
+function removeItem(k,i){let a=read(k,[]);a.splice(i,1);write(k,a);render();renderManage()}
+function saveContact(){let data={live:$('liveUrl').value.trim(),phone:$('phone').value.trim(),map:$('mapUrl').value.trim()};write('contact',data);render();alert('تم حفظ بيانات التواصل.')}
+function render(){renderCards('eventsList','events');renderCards('newsList','news');renderCards('speakersList','speakers');let c=read('contact',{});$('liveContent').innerHTML=c.live?`<a class="btn" target="_blank" rel="noopener" href="${esc(c.live)}">مشاهدة البث المباشر</a>`:'سيظهر رابط البث المباشر هنا عند إضافته من إدارة الموقع.';$('contactContent').innerHTML=`${c.phone?'رقم التواصل: '+esc(c.phone):''} ${c.map?`<br><a class="btn secondary" target="_blank" rel="noopener" href="${esc(c.map)}">فتح موقع المأتم على الخريطة</a>`:''}`||'يمكن إضافة رقم التواصل ورابط الموقع على الخريطة من لوحة التحكم.'}
+applyAppearance();render();
+</script>
+</body></html>
